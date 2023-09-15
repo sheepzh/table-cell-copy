@@ -1,0 +1,40 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./",
+        "module": "commonjs",
+        "target": "es5",
+        "esModuleInterop": true,
+        "sourceMap": true,
+        "resolveJsonModule": true,
+        "importHelpers": true,
+        "moduleResolution": "node",
+        "paths": {
+            "@api/*": [
+                "src/api/*"
+            ],
+            "@util/*": [
+                "src/util/*"
+            ],
+            "@src/*": [
+                "src/*"
+            ],
+            "*": [
+                "types/*"
+            ]
+        }
+    },
+    "lib": [
+        "dom"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist"
+    ],
+    "strict": true,
+    "ts-node": {
+        "files": true,
+        "require": [
+            "tsconfig-paths/register"
+        ]
+    }
+}
